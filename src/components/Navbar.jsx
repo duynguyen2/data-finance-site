@@ -1,19 +1,13 @@
-import React from 'react';
-import tailwindcss from '@tailwindcss/vite';
+import React from 'react'
 
-const Navbar = () => {
-    return (
-        <div className='flex justify-between intems-center h-24 text-white '>
-            <h1 className='w-full text-3xl font-bold text-[#00df9a]'>REACT.</h1>
-            <ul className='flex'>
-                <li className='p-4'>Home</li>
-                <li className='p-4'>Company</li>
-                <li className='p-4'>Resources</li>
-                <li className='p-4'>About</li>
-                <li className='p-4'>Contact</li>
-            </ul>
-        </div>
-    );
-};
 
-export default Navbar;
+const Navbar = ( { theme, setTheme } ) => {
+  return (
+    <div className='flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4 sticky top-0 z-20 backdrop-blur-xl font-medium 
+    bg-white/50 dark:bg-gray-900/70'>
+        <img src={theme === 'dark' ? } />
+    </div>
+  )
+}
+
+export default Navbar
