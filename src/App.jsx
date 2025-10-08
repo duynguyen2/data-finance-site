@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero';
+import UnknownBy from './components/UnknownBy';
+import Services from './components/Services';
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
 
   return (
     <div className='dark:bg-black relative'>
       <Navbar theme={theme} setTheme={setTheme}/>
-
-      <div>
-        <a href="#" className="sm:hover:border-b">Home</a>
-        <a href="#services" className="sm:hover:border-b">Services</a>
-        <a href="#our-work" className="sm:hover:border-b">Our Work</a>
-      </div>
+      <Hero />
+      <UnknownBy />
+      <Services />
       App
     </div>
   )
