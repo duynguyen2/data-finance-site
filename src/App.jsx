@@ -3,6 +3,8 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero';
 import UnknownBy from './components/UnknownBy';
 import Services from './components/Services';
+import OurWork from './components/OurWork';
+import Teams from './components/Teams';
 
 const App = () => {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
@@ -13,6 +15,8 @@ const App = () => {
       <Hero />
       <UnknownBy />
       <Services />
+      <OurWork />
+      <Teams />
       App
     </div>
   )
